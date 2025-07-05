@@ -16,14 +16,15 @@ import {
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 import * as SplashScreen from 'expo-splash-screen';
-import { store } from '../src/store/store'
-import { useFrameworkReady } from '@/hooks/useFrameworkReady';
+import { store } from '../src/store/store';
+import { useFrameworkReady } from '../hooks/useFrameworkReady';
 
 // Prevent splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   useFrameworkReady();
+  
   const [fontsLoaded, fontError] = useFonts({
     'Inter-Regular': Inter_400Regular,
     'Inter-Medium': Inter_500Medium,

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bus-track-app-fixed",
+    "name": "BusTrack",
     "slug": "bus-track-app-fixed",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,11 +20,18 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
       "package": "com.ideveloper.bustrackappfixed"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "bustrack",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
