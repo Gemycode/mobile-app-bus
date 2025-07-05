@@ -17,7 +17,6 @@ import {
 } from '@expo-google-fonts/montserrat';
 import * as SplashScreen from 'expo-splash-screen';
 import { store } from '../src/store/store';
-import { useFrameworkReady } from '../hooks/useFrameworkReady'
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
 
 // Prevent splash screen from auto-hiding
